@@ -25,11 +25,11 @@
 
             data = formattedData
 
-            let userResponse = await fetch(`http://127.0.0.1:4500/user/user/${userId}`)
+            let userResponse = await fetch(`https://cointab-915w.onrender.com/user/user/${userId}`)
             let userData = await userResponse.json()
 
 
-            let postResponse = await fetch(`http://127.0.0.1:4500/post/checkUserId/${userId}`)
+            let postResponse = await fetch(`https://cointab-915w.onrender.com/post/checkUserId/${userId}`)
             let postData = await postResponse.json()
 
             
@@ -72,7 +72,7 @@
 
     BulkAdd.addEventListener("click", async () => {
         try {
-            let response = await fetch("http://127.0.0.1:4500/post/addBulkPosts", {
+            let response = await fetch("https://cointab-915w.onrender.com/post/addBulkPosts", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

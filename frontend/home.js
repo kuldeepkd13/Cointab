@@ -17,7 +17,7 @@ async function fetchData() {
         let jsonData = await response.json()
         console.log(jsonData);
 
-        let userResponse = await fetch("http://127.0.0.1:4500/user/userdata/")
+        let userResponse = await fetch("https://cointab-915w.onrender.com/user/userdata")
         let userData = await userResponse.json()
         console.log(userData);
 
@@ -74,7 +74,7 @@ function displayData(jsonData, userIDs) {
 
             toggleButton.addEventListener("click", async () => {
                 try {
-                    let response = await fetch("http://127.0.0.1:4500/user/addUser/", {
+                    let response = await fetch("https://cointab-915w.onrender.com/user/addUser", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
