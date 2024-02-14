@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./post.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</head>
+
+</head>
+
+<body>
+
+    <button id="BulkAdd" class="btn">Bulk Add</button>
+    <button id="Download" class="btn">Download Excel</button>
+
+    <div class="info">
+        <h2>Name: <span id="name"></span></h2>
+        <h2>Company: <span id="company" ></span></h2>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="./post.js"></script>
+</body>
+
+</html>
